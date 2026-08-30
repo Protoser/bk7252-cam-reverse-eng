@@ -1,0 +1,15 @@
+# Local-only Ghidra project (219MB binary DB, findings are written up in docs/ghidra.md)
+ghidra-rev/
+
+# Third-party clones kept locally for reference, not our work (see docs for links)
+third_party/
+
+# Separate project with its own repo: github.com/Protoser/cam-web-viewer
+webapp/
+
+# Python
+__pycache__/
+*.pyc
+
+# Runtime state written by tools/*.py (device token + real WiFi SSID, not a research doc)
+tools/cam.json

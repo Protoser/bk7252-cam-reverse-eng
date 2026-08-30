@@ -1,0 +1,210 @@
+
+msh />
+msh />[xm]led off
+[I/2026-08-30 09:44:56.001] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:44:56.001] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:44:56
+[xm]led on
+[INFO ] [2026-08-30 17:44:56.237] [pprpc_delete/03516] [pprpc           ]:pprpc delete 2,toexit(tx:0-rx:0)
+[INFO ] [2026-08-30 17:44:56.237] [pprpc_delete/03520] [pprpc           ]:pprpc delete 3
+[INFO ] [2026-08-30 17:44:56.243] [pprpc_delete/03526] [pprpc           ]:pprpc delete 4
+[INFO ] [2026-08-30 17:44:56.257] [pprpc_delete/03535] [pprpc           ]:pprpc delete 5
+[INFO ] [2026-08-30 17:44:56.258] [pprpc_delete/03538] [pprpc           ]:pprpc delete 6
+[INFO ] [2026-08-30 17:44:56.266] [pprpc_delete/03543] [pprpc           ]:pprpc delete 7
+[INFO ] [2026-08-30 17:44:56.277] [pprpc_delete/03546] [pprpc           ]:pprpc delete done
+[ALWAY] [2026-08-30 17:44:56.282] [iot_dev_glbs/00251] [iot.dev.glbs    ]:===iot.dev.glbs try: udp://8.209.77.49:465====
+[INFO ] [2026-08-30 17:44:56.298] [pprpc_create/03371] [pprpc           ]:pprpc(0x2032088) create, xglbs
+[ERROR] [2026-08-30 17:44:56.327] [pprpc_udp_wr/01975] [pprpc           ]:Failed to osal_udp_sendto, rc:118
+[I/2026-08-30 17:44:56.338] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788083096338
+[xm]led off
+jpeg fps:[20] bitrate:[438 KB] 
+[xm]led on
+
+===== $ ls /flash1 =====
+[I/2026-08-30 09:44:56.737] [xdev_adc.c      /00088] : ---vbat voltage:4167---
+
+lls /flash1
+Directory /flash1:
+msh />
+msh />[xm]led off
+[xm]led on
+[I/2026-08-30 09:44:57.079] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:44:57.079] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:44:57
+[xm]led off
+[xm]led on
+[xm]led off
+[xm]led on
+[I/2026-08-30 09:44:57.877] [xdev_adc.c      /00088] : ---vbat voltage:4193---
+
+[xm]led off
+[I/2026-08-30 09:44:58.140] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:44:58.140] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:44:58
+[xm]led on
+[INFO ] [2026-08-30 17:44:58.306] [pprpc_call_c/04808] [pprpc           ]:[pprpc_xglbs](0x2032088) call(GetServers), seq:0, run:2003ms, rc:-5
+[ERROR] [2026-08-30 17:44:58.307] [iot_dev_glbs/00285] [iot.dev.glbs    ]:Failed to iot_dev_glbs_run pprpc_call_ctrl2bin_cmd(GetServers), rc:-5
+[INFO ] [2026-08-30 17:44:58.320] [pprpc_delete/03498] [pprpc           ]:pprpc(0x2032088) delete 1,toexit(tx:0-rx:0)
+[INFO ] [2026-08-30 17:44:58.335] [pprpc_write /02447] [pprpc           ]:pprpc=0x2032088, toexit_tx=1!!!
+[INFO ] [2026-08-30 17:44:58.443] [pprpc_delete/03516] [pprpc           ]:pprpc delete 2,toexit(tx:1-rx:0)
+[INFO ] [2026-08-30 17:44:58.443] [pprpc_delete/03520] [pprpc           ]:pprpc delete 3
+[INFO ] [2026-08-30 17:44:58.449] [pprpc_delete/03526] [pprpc           ]:pprpc delete 4
+[INFO ] [2026-08-30 17:44:58.461] [pprpc_delete/03535] [pprpc           ]:pprpc delete 5
+[INFO ] [2026-08-30 17:44:58.464] [pprpc_delete/03538] [pprpc           ]:pprpc delete 6
+[INFO ] [2026-08-30 17:44:58.481] [pprpc_delete/03543] [pprpc           ]:pprpc delete 7
+[INFO ] [2026-08-30 17:44:58.481] [pprpc_delete/03546] [pprpc           ]:pprpc delete done
+[ALWAY] [2026-08-30 17:44:58.488] [iot_dev_glbs/00251] [iot.dev.glbs    ]:===iot.dev.glbs try: tcp://8.209.77.49:465====
+[INFO ] [2026-08-30 17:44:58.501] [pprpc_create/03371] [pprpc           ]:pprpc(0x2033c0c) create, xglbs
+[I/2026-08-30 17:44:58.579] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788083098579
+jpeg fps:[21] bitrate:[461 KB] 
+[xm]led off
+[xm]led on
+[xm]led off
+[I/2026-08-30 09:44:59.078] [xdev_adc.c      /00088] : ---vbat voltage:4217---
+
+[xm]led on
+[I/2026-08-30 09:44:59.229] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:44:59.229] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:44:59
+[xm]led off
+[xm]led on
+[xm]led off
+[xm]led on
+[I/2026-08-30 09:45:00.222] [xdev_adc.c      /00088] : ---vbat voltage:4194---
+
+[I/2026-08-30 09:45:00.287] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:45:00.287] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:45:0
+[xm]led off
+[I/2026-08-30 17:45:00.385] [xvideo.c        /00562] : audio:len=800, sec=1788083100385
+[xm]led on
+[ERROR] [2026-08-30 17:45:00.509] [osal_tcp_con/01374] [osal.socket     ]:Failed to connect timeout
+[ERROR] [2026-08-30 17:45:00.509] [pprpc_connec/03648] [pprpc           ]:Failed to osal_tcp_connect, rc:-5
+[ERROR] [2026-08-30 17:45:00.516] [iot_dev_glbs/00266] [iot.dev.glbs    ]:Failed to iot_dev_glbs_run pprpc_connect
+[INFO ] [2026-08-30 17:45:00.526] [pprpc_delete/03498] [pprpc           ]:pprpc(0x2033c0c) delete 1,toexit(tx:0-rx:0)
+jpeg fps:[20] bitrate:[440 KB] 
+[I/2026-08-30 17:45:00.792] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788083100792
+[xm]led off
+[xm]led on
+[xm]led off
+[I/2026-08-30 09:45:01.352] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:45:01.352] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:45:1
+[I/2026-08-30 09:45:01.388] [xdev_adc.c      /00088] : ---vbat voltage:4191---
+
+[xm]led on
+[xm]led off
+[xm]led on
+[xm]led off
+[xm]led on
+[I/2026-08-30 09:45:02.420] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:45:02.420] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:45:2
+[xm]led off
+[I/2026-08-30 09:45:02.520] [xdev_adc.c      /00088] : ---vbat voltage:4173---
+
+jpeg fps:[20] bitrate:[423 KB] 
+[xm]led on
+
+===== $ fal probe =====
+ffal probe
+No flash device or partition was probed.
+Usage: fal probe [dev_name|part_name]   - probe flash device or partition by given name.
+[32;22m[I/FAL] ==================== FAL partition table ====================[0m
+[32;22m[I/FAL] | name       | flash_dev        |   offset   |    length  |[0m
+[32;22m[I/FAL] -------------------------------------------------------------[0m
+[32;22m[I/FAL] | download   | beken_onchip     | 0x00132000 | 0x000ae000 |[0m
+[32;22m[I/FAL] | app        | beken_onchip_crc | 0x00010000 | 0x00110000 |[0m
+[32;22m[I/FAL] | bootloader | beken_onchip_crc | 0x00000000 | 0x00010000 |[0m
+[32;22m[I/FAL] =[I/2026-08-30 17:45:02.999] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788083102999
+============================================================[0m
+msh />
+msh />[xm]led off
+[xm]led on
+[xm]led off
+[I/2026-08-30 09:45:03.479] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:45:03.479] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:45:3
+[xm]led on
+[I/2026-08-30 09:45:03.650] [xdev_adc.c      /00088] : ---vbat voltage:4185---
+
+[xm]led off
+[xm]led on
+[xm]led off
+[xm]led on
+[I/2026-08-30 09:45:04.535] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:45:04.535] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:45:4
+jpeg fps:[20] bitrate:[421 KB] 
+[xm]led off
+[I/2026-08-30 09:45:04.782] [xdev_adc.c      /00088] : ---vbat voltage:4175---
+
+[xm]led on
+[I/2026-08-30 17:45:05.199] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788083105199
+         pool size  max used size available size
+------- ---------- ------------- --------------
+ITCM    27072      16756         10316
+TCM     116024     60612         59940
+heap    262144     207436        69648
+[xm]led off
+[xm]led on
+[I/2026-08-30 17:45:05.425] [xvideo.c        /00562] : audio:len=800, sec=1788083105425
+[I/2026-08-30 09:45:05.602] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:45:05.602] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:45:5
+[E/2026-08-30 17:45:05.606] [tf_record.c     /00506] : statfs failed for path->[/sd]
+[xm]led off
+[xm]led on
+[I/2026-08-30 09:45:05.934] [xdev_adc.c      /00088] : ---vbat voltage:4195---
+
+[xm]led off
+W (103358) sd_card: CMD8 SEND_IF_COND err:-3902
+W (103368) sd_card: CMD55 APP_CMD err:-3902
+[E/2026-08-30 17:45:06.334] [tf_record.c     /00514] : SD File System initialzation failed!
+
+[xm]led on
+[xm]led off
+jpeg fps:[20] bitrate:[422 KB] 
+[xm]led on
+[xm]led off
+[I/2026-08-30 09:45:07.063] [xdev_adc.c      /00088] : ---vbat voltage:4212---
+
+[xm]led on
+[INFO ] [2026-08-30 17:45:07.194] [pprpc_delete/03516] [pprpc           ]:pprpc delete 2,toexit(tx:0-rx:0)
+[INFO ] [2026-08-30 17:45:07.194] [pprpc_delete/03520] [pprpc           ]:pprpc delete 3
+[INFO ] [2026-08-30 17:45:07.200] [pprpc_delete/03526] [pprpc           ]:pprpc delete 4
+[INFO ] [2026-08-30 17:45:07.207] [pprpc_delete/03535] [pprpc           ]:pprpc delete 5
+[INFO ] [2026-08-30 17:45:07.215] [pprpc_delete/03538] [pprpc           ]:pprpc delete 6
+[INFO ] [2026-08-30 17:45:07.223] [pprpc_delete/03543] [pprpc           ]:pprpc delete 7
+[INFO ] [2026-08-30 17:45:07.231] [pprpc_delete/03546] [pprpc           ]:pprpc delete done
+[ALWAY] [2026-08-30 17:45:07.239] [iot_dev_glbs/00251] [iot.dev.glbs    ]:===iot.dev.glbs try: udp://8.209.77.49:8000====
+[INFO ] [2026-08-30 17:45:07.251] [pprpc_create/03371] [pprpc           ]:pprpc(0x2030614) create, xglbs
+[ERROR] [2026-08-30 17:45:07.269] [pprpc_udp_wr/01975] [pprpc           ]:Failed to osal_udp_sendto, rc:118
+[I/2026-08-30 09:45:07.367] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:45:07.367] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:45:7
+[I/2026-08-30 17:45:07.503] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788083107503
+[xm]led off
+[xm]led on
+[xm]led off
+[xm]led on
+[I/2026-08-30 09:45:08.253] [xdev_adc.c      /00088] : ---vbat voltage:4217---
+
+[xm]led off
+[I/2026-08-30 09:45:08.433] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:45:08.433] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:45:8
+jpeg fps:[20] bitrate:[425 KB] 
+[xm]led on

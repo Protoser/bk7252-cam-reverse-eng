@@ -1,0 +1,255 @@
+
+msh />
+msh />[I/2026-08-30 19:53:20.787] [xdev_adc.c      /00088] : ---vbat voltage:4200---
+
+W (1616356) sd_card: CMD8 SEND_IF_COND err:-3902
+W (1616360) sd_card: CMD55 APP_CMD err:-3902
+[E/2026-08-31 03:53:20.795] [tf_record.c     /00514] : SD File System initialzation failed!
+
+jpeg fps:[20] bitrate:[220 KB] 
+[I/2026-08-31 03:53:21.155] [xvideo.c        /00562] : audio:len=800, sec=1788119601155
+
+===== $ fal probe =====
+ffal probe
+No flash device or partition was probed.
+Usage: fal probe [dev_name|part_name]   - probe flash device or partition by given name.
+[32;22m[I/FAL] ==================== FAL partition table ====================[0m
+[32;22m[I/FAL] | name       | flash_dev        |   offset   |    length  |[0m
+[32;22m[I/FAL] -------------------------------------------------------------[0m
+[32;22m[I/FAL] | download   | beken_onchip     | 0x00132000 | 0x000ae000 |[0m
+[32;22m[I/FAL] | app        | beken_onchip_crc | 0x00010000 | 0x00110000 |[0m
+[32;22m[I/FAL] | bootloader | beken_onchip_crc | 0x00000000 | 0x00010000 |[0m
+[32;22m[I/FAL] =============================================================[0m
+msh />
+msh />[I/2026-08-30 19:53:21.832] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:21.832] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:21
+[I/2026-08-30 19:53:21.858] [xdev_adc.c      /00088] : ---vbat voltage:4188---
+
+[I/2026-08-31 03:53:22.246] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788119602246
+[I/2026-08-30 19:53:22.874] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:22.874] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:22
+[I/2026-08-30 19:53:22.927] [xdev_adc.c      /00088] : ---vbat voltage:4146---
+
+jpeg fps:[20] bitrate:[220 KB] 
+[I/2026-08-30 19:53:23.910] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:23.910] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:23
+[I/2026-08-30 19:53:24.010] [xdev_adc.c      /00088] : ---vbat voltage:4187---
+
+[I/2026-08-31 03:53:24.351] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788119604351
+         pool size  max used size available size
+------- ---------- ------------- --------------
+ITCM    27072      16756         10316
+TCM     116024     60612         59500
+heap    262144     225236        61544
+[I/2026-08-30 19:53:24.955] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:24.955] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:24
+jpeg fps:[20] bitrate:[220 KB] 
+[I/2026-08-30 19:53:25.104] [xdev_adc.c      /00088] : ---vbat voltage:4192---
+
+[I/2026-08-30 19:53:25.997] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:25.997] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:25
+[I/2026-08-31 03:53:26.170] [xvideo.c        /00562] : audio:len=800, sec=1788119606170
+[I/2026-08-30 19:53:26.172] [xdev_adc.c      /00088] : ---vbat voltage:4178---
+
+[I/2026-08-31 03:53:26.451] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788119606451
+jpeg fps:[20] bitrate:[220 KB] 
+[I/2026-08-30 19:53:27.041] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:27.041] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:27
+[I/2026-08-30 19:53:27.255] [xdev_adc.c      /00088] : ---vbat voltage:4165---
+
+[I/2026-08-30 19:53:28.085] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:28.085] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:28
+[I/2026-08-30 19:53:28.337] [xdev_adc.c      /00088] : ---vbat voltage:4213---
+
+[I/2026-08-31 03:53:28.549] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788119608549
+jpeg fps:[20] bitrate:[220 KB] 
+[I/2026-08-30 19:53:29.135] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:29.136] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:29
+[INFO ] [2026-08-31 03:53:29.161] [pprpc_call_c/04808] [pprpc           ]:[pprpc_ppmq](0x2035378) call(PPMQPing), seq:115, run:27ms, rc:0
+[INFO ] [2026-08-31 03:53:29.162] [pprpc_ping_s/00711] [iot.dev.ppmq    ]:ppmq->err_mark=0x0000(0)
+[ALWAY] [2026-08-31 03:53:29.171] [iot_dev_ppmq/01344] [iot.dev.ppmq    ]:Success to PPMQ Ping(normal), hb_count(udp) = 54
+[I/2026-08-30 19:53:29.438] [xdev_adc.c      /00088] : ---vbat voltage:4199---
+
+[I/2026-08-30 19:53:30.183] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:30.183] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:30
+[I/2026-08-30 19:53:30.510] [xdev_adc.c      /00088] : ---vbat voltage:4188---
+
+[I/2026-08-31 03:53:30.627] [xvideo.c        /00093] : -------->fps=9, vsz=3000, time=1788119610627
+jpeg fps:[20] bitrate:[220 KB] 
+[I/2026-08-30 19:53:31.226] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:31.226] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:31
+[E/2026-08-31 03:53:31.230] [tf_record.c     /00506] : statfs failed for path->[/sd]
+[I/2026-08-31 03:53:31.290] [xvideo.c        /00562] : audio:len=800, sec=1788119611290
+[I/2026-08-30 19:53:31.590] [xdev_adc.c      /00088] : ---vbat voltage:4203---
+
+W (1627490) sd_card: CMD8 SEND_IF_COND err:-3902
+W (1627494) sd_card: CMD55 APP_CMD err:-3902
+[E/2026-08-31 03:53:31.929] [tf_record.c     /00514] : SD File System initialzation failed!
+
+[I/2026-08-30 19:53:32.673] [xdev_adc.c      /00088] : ---vbat voltage:4184---
+
+[I/2026-08-31 03:53:32.727] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788119612727
+[I/2026-08-30 19:53:32.971] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:32.971] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:32
+jpeg fps:[20] bitrate:[220 KB] 
+[I/2026-08-30 19:53:33.754] [xdev_adc.c      /00088] : ---vbat voltage:4238---
+
+[I/2026-08-30 19:53:34.014] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:34.014] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:34
+[I/2026-08-31 03:53:34.827] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788119614827
+         pool size  max used size available size
+------- ---------- ------------- --------------
+ITCM    27072      16756         10316
+TCM     116024     60612         59500
+heap    262144     225236        61688
+[I/2026-08-30 19:53:34.844] [xdev_adc.c      /00088] : ---vbat voltage:4170---
+
+[I/2026-08-30 19:53:35.050] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:35.051] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:35
+jpeg fps:[20] bitrate:[225 KB] 
+[I/2026-08-30 19:53:35.925] [xdev_adc.c      /00088] : ---vbat voltage:4179---
+
+[I/2026-08-30 19:53:36.074] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:36.074] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:36
+[I/2026-08-31 03:53:36.330] [xvideo.c        /00562] : audio:len=800, sec=1788119616330
+[I/2026-08-31 03:53:36.927] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788119616927
+[I/2026-08-30 19:53:37.003] [xdev_adc.c      /00088] : ---vbat voltage:4168---
+
+[I/2026-08-30 19:53:37.111] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:37.111] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:37
+jpeg fps:[21] bitrate:[231 KB] 
+[I/2026-08-30 19:53:38.087] [xdev_adc.c      /00088] : ---vbat voltage:4161---
+
+[I/2026-08-30 19:53:38.125] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:38.125] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:38
+[I/2026-08-31 03:53:39.027] [xvideo.c        /00093] : -------->fps=9, vsz=3000, time=1788119619027
+[I/2026-08-30 19:53:39.155] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:39.155] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:39
+jpeg fps:[20] bitrate:[220 KB] 
+[I/2026-08-30 19:53:39.169] [xdev_adc.c      /00088] : ---vbat voltage:4191---
+
+[I/2026-08-30 19:53:40.190] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:40.190] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:40
+[I/2026-08-30 19:53:40.250] [xdev_adc.c      /00088] : ---vbat voltage:4153---
+
+[I/2026-08-31 03:53:41.126] [xvideo.c        /00093] : -------->fps=9, vsz=3000, time=1788119621126
+jpeg fps:[20] bitrate:[220 KB] 
+[I/2026-08-30 19:53:41.225] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:41.225] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:41
+[I/2026-08-30 19:53:41.337] [xdev_adc.c      /00088] : ---vbat voltage:4197---
+
+[I/2026-08-31 03:53:41.370] [xvideo.c        /00562] : audio:len=800, sec=1788119621370
+[I/2026-08-30 19:53:42.263] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:42.263] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:42
+[E/2026-08-31 03:53:42.267] [tf_record.c     /00506] : statfs failed for path->[/sd]
+[I/2026-08-30 19:53:42.419] [xdev_adc.c      /00088] : ---vbat voltage:4194---
+
+W (1638530) sd_card: CMD8 SEND_IF_COND err:-3902
+W (1638534) sd_card: CMD55 APP_CMD err:-3902
+[E/2026-08-31 03:53:42.969] [tf_record.c     /00514] : SD File System initialzation failed!
+
+jpeg fps:[20] bitrate:[220 KB] 
+[I/2026-08-31 03:53:43.277] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788119623277
+[I/2026-08-30 19:53:43.501] [xdev_adc.c      /00088] : ---vbat voltage:4166---
+
+[I/2026-08-30 19:53:44.003] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:44.003] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:44
+[I/2026-08-30 19:53:44.576] [xdev_adc.c      /00088] : ---vbat voltage:4189---
+
+[I/2026-08-30 19:53:45.044] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:45.044] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:45
+jpeg fps:[20] bitrate:[220 KB] 
+[I/2026-08-31 03:53:45.376] [xvideo.c        /00093] : -------->fps=9, vsz=3000, time=1788119625376
+         pool size  max used size available size
+------- ---------- ------------- --------------
+ITCM    27072      16756         10316
+TCM     116024     60612         59500
+heap    262144     225236        61688
+[I/2026-08-30 19:53:45.658] [xdev_adc.c      /00088] : ---vbat voltage:4189---
+
+[I/2026-08-30 19:53:46.089] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:46.089] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:46
+[I/2026-08-31 03:53:46.490] [xvideo.c        /00562] : audio:len=800, sec=1788119626490
+[I/2026-08-30 19:53:46.741] [xdev_adc.c      /00088] : ---vbat voltage:4160---
+
+[I/2026-08-30 19:53:47.125] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:47.125] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:47
+jpeg fps:[20] bitrate:[220 KB] 
+[I/2026-08-31 03:53:47.426] [xvideo.c        /00093] : -------->fps=9, vsz=3000, time=1788119627426
+[I/2026-08-30 19:53:47.808] [xdev_adc.c      /00088] : ---vbat voltage:4183---
+
+[I/2026-08-30 19:53:48.170] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:48.170] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:48
+[I/2026-08-30 19:53:48.890] [xdev_adc.c      /00088] : ---vbat voltage:4197---
+
+jpeg fps:[20] bitrate:[225 KB] 
+[I/2026-08-30 19:53:49.214] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:49.214] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:49
+[I/2026-08-31 03:53:49.476] [xvideo.c        /00093] : -------->fps=9, vsz=3000, time=1788119629476
+[I/2026-08-30 19:53:49.973] [xdev_adc.c      /00088] : ---vbat voltage:4206---
+
+[I/2026-08-30 19:53:50.238] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:50.238] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:50
+[I/2026-08-30 19:53:51.044] [xdev_adc.c      /00088] : ---vbat voltage:4209---
+
+jpeg fps:[20] bitrate:[220 KB] 
+[I/2026-08-30 19:53:51.282] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:53:51.282] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:53:51
+[I/2026-08-31 03:53:51.531] [xvideo.c        /00562] : audio:len=800, sec=1788119631530
+[

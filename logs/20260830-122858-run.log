@@ -1,0 +1,83 @@
+
+msh />
+msh />[xm]led on
+[xm]led off
+[I/2026-08-30 17:45:47.006] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788083147006
+         pool size  max used size available size
+------- ---------- ------------- --------------
+ITCM    27072      16756         10316
+TCM     116024     60612         59940
+heap    262144     207744        69624
+[xm]led on
+[I/2026-08-30 09:45:47.202] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:45:47.202] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:45:47
+[xm]led off
+[xm]led on
+[I/2026-08-30 09:45:47.470] [xdev_adc.c      /00088] : ---vbat voltage:4185---
+
+
+===== $ wifi =====
+wwifi
+[DRV_WLAN]drivers\wlan\drv_wlan.c L1019 beken_wlan_control cmd: case WIFI_INIT!
+[wifi_connect]: normal connect 
+ssid is null or bssid is invalid/disabled
+msh />
+msh />[xm]led off
+[xm]led on
+[xm]led off
+[I/2026-08-30 09:45:48.250] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:45:48.250] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:45:48
+[xm]led on
+jpeg fps:[20] bitrate:[280 KB] 
+[xm]led off
+[I/2026-08-30 09:45:48.558] [xdev_adc.c      /00088] : ---vbat voltage:4189---
+
+[xm]led on
+[xm]led off
+[I/2026-08-30 17:45:49.157] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788083149157
+[xm]led on
+[I/2026-08-30 09:45:49.300] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:45:49.300] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:45:49
+[xm]led off
+[xm]led on
+[I/2026-08-30 09:45:49.641] [xdev_adc.c      /00088] : ---vbat voltage:4191---
+
+[xm]led off
+[xm]led on
+[xm]led off
+[I/2026-08-30 09:45:50.349] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:45:50.349] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:45:50
+[E/2026-08-30 17:45:50.353] [tf_record.c     /00506] : statfs failed for path->[/sd]
+[xm]led on
+jpeg fps:[20] bitrate:[280 KB] 
+[xm]led off
+[I/2026-08-30 09:45:50.721] [xdev_adc.c      /00088] : ---vbat voltage:4186---
+
+[xm]led on
+W (148005) sd_card: CMD8 SEND_IF_COND err:-3902
+W (148009) sd_card: CMD55 APP_CMD err:-3902
+[E/2026-08-30 17:45:50.977] [tf_record.c     /00514] : SD File System initialzation failed!
+
+[xm]led off
+[I/2026-08-30 17:45:51.021] [xvideo.c        /00562] : audio:len=800, sec=1788083151021
+[INFO ] [2026-08-30 17:45:51.136] [pprpc_delete/03516] [pprpc           ]:pprpc delete 2,toexit(tx:0-rx:0)
+[INFO ] [2026-08-30 17:45:51.136] [pprpc_delete/03520] [pprpc           ]:pprpc delete 3
+[INFO ] [2026-08-30 17:45:51.142] [pprpc_delete/03526] [pprpc           ]:pprpc delete 4
+[INFO ] [2026-08-30 17:45:51.155] [pprpc_delete/03535] [pprpc           ]:pprpc delete 5
+[INFO ] [2026-08-30 17:45:51.157] [pprpc_delete/03538] [pprpc           ]:pprpc delete 6
+[INFO ] [2026-08-30 17:45:51.175] [pprpc_delete/03543] [pprpc           ]:pprpc delete 7
+[INFO ] [2026-08-30 17:45:51.175] [pprpc_delete/03546] [pprpc           ]:pprpc delete done
+[ALWAY] [2026-08-30 17:45:51.181] [iot_dev_glbs/00251] [iot.dev.glbs    ]:===iot.dev.glbs try: udp://39.108.59.60:8000====
+[INFO ] [2026-08-30 17:45:51.195] [pprpc_create/03371] [pprpc           ]:pprpc(0x2035464) create, xglbs
+[ERROR] [2026-08-30 17:45:51.235] [pprpc_udp_wr/01975] [pprpc           ]:Failed to osal_udp_sendto, rc:118
+[I/2026-08-30 17:45:51.296] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788083151296
+[xm]led on
+[xm]led off

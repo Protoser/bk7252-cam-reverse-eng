@@ -1,0 +1,68 @@
+
+msh />
+msh />[xm]led off
+[I/2026-08-30 09:46:22.819] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:46:22.819] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:46:22
+[xm]led on
+jpeg fps:[20] bitrate:[324 KB] 
+[xm]led off
+[I/2026-08-30 09:46:23.181] [xdev_adc.c      /00088] : ---vbat voltage:4178---
+
+[I/2026-08-30 17:46:23.368] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788083183368
+[xm]led on
+[xm]led off
+
+===== $ xc help =====
+xxc help
+msh />
+msh />[xm]led on
+[I/2026-08-30 09:46:23.857] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:46:23.857] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:46:23
+[xm]led off
+[I/2026-08-30 17:46:24.154] [xvideo.c        /00562] : audio:len=800, sec=1788083184153
+[INFO ] [2026-08-30 17:46:24.155] [pprpc_call_c/04808] [pprpc           ]:[pprpc_xglbs](0x20316d8) call(GetServers), seq:0, run:2013ms, rc:-5
+[ERROR] [2026-08-30 17:46:24.162] [iot_dev_glbs/00285] [iot.dev.glbs    ]:Failed to iot_dev_glbs_run pprpc_call_ctrl2bin_cmd(GetServers), rc:-5
+[INFO ] [2026-08-30 17:46:24.175] [pprpc_delete/03498] [pprpc           ]:pprpc(0x20316d8) delete 1,toexit(tx:0-rx:0)
+[xm]led on
+[INFO ] [2026-08-30 17:46:24.190] [pprpc_write /02447] [pprpc           ]:pprpc=0x20316d8, toexit_tx=1!!!
+[INFO ] [2026-08-30 17:46:24.285] [pprpc_delete/03516] [pprpc           ]:pprpc delete 2,toexit(tx:1-rx:0)
+[INFO ] [2026-08-30 17:46:24.285] [pprpc_delete/03520] [pprpc           ]:pprpc delete 3
+[INFO ] [2026-08-30 17:46:24.291] [pprpc_delete/03526] [pprpc           ]:pprpc delete 4
+[INFO ] [2026-08-30 17:46:24.298] [pprpc_delete/03535] [pprpc           ]:pprpc delete 5
+[INFO ] [2026-08-30 17:46:24.306] [pprpc_delete/03538] [pprpc           ]:pprpc delete 6
+[INFO ] [2026-08-30 17:46:24.314] [pprpc_delete/03543] [pprpc           ]:pprpc delete 7
+[INFO ] [2026-08-30 17:46:24.322] [pprpc_delete/03546] [pprpc           ]:pprpc delete done
+[ALWAY] [2026-08-30 17:46:24.331] [iot_dev_glbs/00251] [iot.dev.glbs    ]:===iot.dev.glbs try: tcp://8.209.77.49:80====
+[INFO ] [2026-08-30 17:46:24.340] [pprpc_create/03371] [pprpc           ]:pprpc(0x20316d8) create, xglbs
+[I/2026-08-30 09:46:24.519] [xdev_adc.c      /00088] : ---vbat voltage:4177---
+
+[xm]led off
+[xm]led on
+[xm]led off
+[I/2026-08-30 09:46:24.925] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:46:24.925] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:46:24
+jpeg fps:[20] bitrate:[385 KB] 
+[xm]led on
+[xm]led off
+[I/2026-08-30 17:46:25.640] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788083185640
+[I/2026-08-30 09:46:25.642] [xdev_adc.c      /00088] : ---vbat voltage:4176---
+
+[xm]led on
+[xm]led off
+[I/2026-08-30 09:46:25.981] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 09:46:25.981] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 17:46:25
+[xm]led on
+[xm]led off
+[ERROR] [2026-08-30 17:46:26.352] [osal_tcp_con/01374] [osal.socket     ]:Failed to connect timeout
+[ERROR] [2026-08-30 17:46:26.352] [pprpc_connec/03648] [pprpc           ]:Failed to osal_tcp_connect, rc:-5
+[ERROR] [2026-08-30 17:46:26.359] [iot_dev_glbs/00266] [iot.dev.glbs    ]:Failed to iot_dev_glbs_run pprpc_connect
+[INFO ] [2026-08-30 17:46:26.369] [pprpc_delete/03498] [pprpc           ]:pprpc(0x20316d8) delete 1,toexit(tx:0-rx:0)
+[xm]led on

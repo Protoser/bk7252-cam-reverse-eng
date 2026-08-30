@@ -1,0 +1,403 @@
+
+msh />
+msh />[I/2026-08-30 18:08:21.370] [xdev_adc.c      /00088] : ---vbat voltage:4165---
+
+[xm]led off
+[xm]led on
+wwifi w0 join VertexNET 36641522764182894463
+[DRV_WLAN]drivers\wlan\drv_wlan.c L1019 beken_wlan_control cmd: case WIFI_INIT!
+[wifi_connect]: normal connect 
+_wifi_easyjoin: ssid:VertexNET bssid:00:00:00:00:00:00 
+key = 36641522764182894463
+fast_connect
+sizeof(wpa_supplicant)=1024
+mm_add_if_req_handler:0
+hapd_intf_add_vif,type:2, s:0, id:1
+wpa_dInit
+hapd_intf_del_key: mac ff:ff:ff:ff:ff:ff, hw key idx 65
+hapd_intf_del_key: mac ff:ff:ff:ff:ff:ff, hw key idx 65
+hapd_intf_del_key: mac ff:ff:ff:ff:ff:ff, hw key idx 65
+hapd_intf_del_key: mac ff:ff:ff:ff:ff:ff, hw key idx 65
+hapd_intf_del_key: mac ff:ff:ff:ff:ff:ff, hw key idx 65
+hapd_intf_del_key: mac ff:ff:ff:ff:ff:ff, hw key idx 65
+wpa S: DISCONNECTED -> INACTIVE
+wpa S: INACTIVE -> DISCONNECTED
+me_mgmt_tx chan no avail
+wpa_supplicant_req_scan
+Setting scan request: 0.000000 sec
+wpa_supplicant_scan
+wpa S: DISCONNECTED chan avail
+XXX: mm_sec_machwkey_wr_custom, hw_sta_idx 26
+-wr_custom, me_mgmt_tx_cfm_handler: status 0x80800000
+XXX: mm_sec_machwkey_del_custom, hw_sta_idx 26
+wpa_drv_scan
+wpa_send_scan_req
+no ht in scan
+scan_start_req_handler
+wpa_driver_scan_start_cb
+wpa rx E SCAN_STARTED
+fast dhcpwarning: tshell stack is close to end of stack address.
+ shell stack is closewarning: tshell stack is close to end of stack address.
+warning: tshell stack is close to end of stack address.
+warning: tshell stack is close to end of stack address.
+warning: tshell stack is close to end of stack address.
+ to end omsh />
+msh />[I/2026-08-30 18:08:21.745] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 18:08:21.745] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 26:8:21
+[xm]led off
+scanu_confirm: status 0, upload_cnt 4, recv_cnt 7, time 184790us, result 1
+wpa_driver_scan_cb
+wpa rx E SCAN_RESULTS
+Scan completed in 0.163000 seconds
+wpa_get_scan_rst:1
+cipher2security 1026 2 16 16
+cipher2security 1026 2 16 16
+wpa_supplicant_connect
+Cancelling scan request
+wpa S: SCANNING -> ASSOCIATING
+wpa_driver_associate: auth_alg 0x1
+found scan rst rssi -45 > -50 0
+sta_mgmt_register: mac 04:b4:fe:31:51:36
+sm_auth_send:1
+sm_auth_handler
+ht in assoc req
+sm_assoc_rsp_handler
+rc_init: station_id=0 format_mod=2 pre_type=0 short_gi=1 max_bw=0
+rc_init: nss_max=0 mcs_max=7 r_idx_min=0 r_idx_max=3 no_samples=10
+mm_set_vif_state_req_handler
+chan_bcn_detect_start
+---------SM_CONNECT_IND_ok, aid 2, bssid 04:b4:fe:31:51:36
+notify wpa csa
+wpa starting csa
+wpa csa ,chan 11 -> 1
+wpa notify mm csa: 41a580:0:8
+mm start csa
+mm updating bcn
+wpa csa started
+wpa rx E ASSOC
+wpa S: ASSOCIATING -> ASSOCIATED
+
+new ie: 0 : 56 65 72 74 65 78 4e 45 54 
+new ie: 1 : 82 84 8b 96 8c 12 98 24 
+new ie: 3 : 01 
+new ie: 30 : 01 00 00 0f ac 04 01 00 00 0f ac 04 02 00 00 0f ac 02 00 0f ac 08 8c 00 
+new ie: 2d : ef 19 03 ff ff 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 
+
+Cancelling scan request
+[xm]led on
+wpa S: ASSOCIATED -> 4WAY_HANDSHAKE
+WPA: TK 21e851b41732b274c6a78bf5aa3ada08
+wpa S: 4WAY_HANDSHAKE -> 4WAY_HANDSHAKE
+WPA: TK 21e851b41732b274c6a78bf5aa3ada08
+wpa S: 4WAY_HANDSHAKE -> 4WAY_HANDSHAKE
+hapd_intf_add_key CCMP
+add sta_mgmt_get_sta
+sta:0, vif:1, key:0
+sta_mgmt_add_key
+add hw key idx:24
+wpa S: 4WAY_HANDSHAKE -> GROUP_HANDSHAKE
+WPA: GTK 2b648511517ff58d9f9014e9061a086b
+hapd_intf_add_key CCMP
+add is_broadcast_ether_addr
+sta:255, vif:1, key:2
+add hw key idx:6
+hapd_intf_add_key BIP
+add is_broadcast_ether_addr
+sta:255, vif:1, key:5
+add hw key idx:67
+wpa S: GROUP_HANDSHAKE -> COMPLETED
+ctrl_port_hdl:1
+me_set_ps_disable:978 0 0 0 1 1
+dis set ps 1!!
+===wlan_event_handle:11===
+[wlan_connect]:start tick =  132405, connect done tick = 132862, total = 457 
+[wlan_connect]:start tick =  132405, connect done tick = 132869, total = 464 
+[WLAN_MGNT]wlan sta connected event callback 
+WLAN_EVENT_CONNECTED
+sta_ip_start
+
+configuring interface mlan (with DHCP client)
+bad_channel vif_idx=1
+[Ijpeg fps:[20] bitrate:[220 KB] 
+/2026-08-31 02:08:22.149] [xvideo.c        /00562] : audio:len=800, sec=1788113302149
+[xm]led off
+[xm]led on
+[I/2026-08-30 18:08:22.571] [xdev_adc.c      /00088] : ---vbat voltage:4236---
+
+[xm]led off
+[xm]led on
+mm csa switch chan=1
+mm updating bcn
+mm csa finish, notify wpa
+wpa rx csa finish sig
+wpa csa finished
+mm updating bcn
+[I/2026-08-30 18:08:22.838] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 18:08:22.838] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 26:8:22
+IP UP: 192.168.178.147 
+===wlan_event_handle:12===
+[ip_up]:start tick =  132405, ip_up tick = 133735, total = 1330 
+--write status reg:0,2--
+--write status reg:4004,2--
+writed fci to flash
+[I/2026-08-31 02:08:23.375] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788113303375
+[I/2026-08-30 18:08:23.649] [xdev_adc.c      /00088] : ---vbat voltage:4198---
+
+[I/2026-08-30 18:08:23.883] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 18:08:23.883] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 26:8:23
+[E/2026-08-31 02:08:23.887] [tf_record.c     /00506] : statfs failed for path->[/sd]
+jpeg fps:[20] bitrate:[220 KB] 
+W (135367) sd_card: CMD8 SEND_IF_COND err:-3902
+W (135371) sd_card: CMD55 APP_CMD err:-3902
+[E/2026-08-31 02:08:24.601] [tf_record.c     /00514] : SD File System initialzation failed!
+
+[I/2026-08-30 18:08:24.748] [xdev_adc.c      /00088] : ---vbat voltage:4213---
+
+[I/2026-08-31 02:08:25.496] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788113305496
+[I/2026-08-30 18:08:25.640] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 18:08:25.640] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 26:8:25
+[I/2026-08-30 18:08:25.830] [xdev_adc.c      /00088] : ---vbat voltage:4222---
+
+[INFO ] [2026-08-31 02:08:25.906] [pprpc_delete/03516] [pprpc           ]:pprpc delete 2,toexit(tx:0-rx:0)
+[INFO ] [2026-08-31 02:08:25.906] [pprpc_delete/03520] [pprpc           ]:pprpc delete 3
+[INFO ] [2026-08-31 02:08:25.912] [pprpc_delete/03526] [pprpc           ]:pprpc delete 4
+[INFO ] [2026-08-31 02:08:25.920] [pprpc_delete/03535] [pprpc           ]:pprpc delete 5
+[INFO ] [2026-08-31 02:08:25.927] [pprpc_delete/03538] [pprpc           ]:pprpc delete 6
+[INFO ] [2026-08-31 02:08:25.935] [pprpc_delete/03543] [pprpc           ]:pprpc delete 7
+[INFO ] [2026-08-31 02:08:25.943] [pprpc_delete/03546] [pprpc           ]:pprpc delete done
+[ALWAY] [2026-08-31 02:08:25.951] [iot_dev_glbs/00251] [iot.dev.glbs    ]:===iot.dev.glbs try: udp://39.108.59.60:465====
+[INFO ] [2026-08-31 02:08:25.962] [pprpc_create/03371] [pprpc           ]:pprpc(0x20340a0) create, xglbs
+jpeg fps:[20] bitrate:[220 KB] 
+[INFO ] [2026-08-31 02:08:26.241] [pprpc_call_c/04808] [pprpc           ]:[pprpc_xglbs](0x20340a0) call(GetServers), seq:0, run:269ms, rc:0
+[INFO ] [2026-08-31 02:08:26.243] [pprpc_delete/03498] [pprpc           ]:pprpc(0x20340a0) delete 1,toexit(tx:0-rx:0)
+[INFO ] [2026-08-31 02:08:26.258] [pprpc_write /02447] [pprpc           ]:pprpc=0x20340a0, toexit_tx=1!!!
+[INFO ] [2026-08-31 02:08:26.353] [pprpc_delete/03516] [pprpc           ]:pprpc delete 2,toexit(tx:1-rx:0)
+[INFO ] [2026-08-31 02:08:26.353] [pprpc_delete/03520] [pprpc           ]:pprpc delete 3
+[INFO ] [2026-08-31 02:08:26.359] [pprpc_delete/03526] [pprpc           ]:pprpc delete 4
+[INFO ] [2026-08-31 02:08:26.366] [pprpc_delete/03535] [pprpc           ]:pprpc delete 5
+[INFO ] [2026-08-31 02:08:26.374] [pprpc_delete/03538] [pprpc           ]:pprpc delete 6
+[INFO ] [2026-08-31 02:08:26.382] [pprpc_delete/03543] [pprpc           ]:pprpc delete 7
+[INFO ] [2026-08-31 02:08:26.390] [pprpc_delete/03546] [pprpc           ]:pprpc delete done
+[ALWAY] [2026-08-31 02:08:26.398] [iot_dev_glbs/00148] [iot.dev.glbs    ]:===iot.dev.glbs state(RUN_UDP->SUCCESS)===
+[INFO ] [2026-08-31 02:08:26.408] [iot_dev_glbs/00448] [iot.dev.glbs    ]:iot.dev.glbs success
+[ALWAY] [2026-08-31 02:08:26.416] [iot_dev_glbs/00215] [iot.dev.glbs    ]:Show ResvInfo(8)
+[INFO ] [2026-08-31 02:08:26.424] [iot_dev_glbs/00216] [iot.dev.glbs    ]:req_times :1788113305972
+[INFO ] [2026-08-31 02:08:26.433] [iot_dev_glbs/00217] [iot.dev.glbs    ]:srv_timems:1788118121382
+[INFO ] [2026-08-31 02:08:26.445] [iot_dev_glbs/00218] [iot.dev.glbs    ]:region_id:4
+[ALWAY] [2026-08-31 02:08:26.449] [iot_dev_glbs/00226] [iot.dev.glbs    ]:[0]resid:1(PPMQD_TCP), ip:8.209.73.117
+[ALWAY] [2026-08-31 02:08:26.466] [iot_dev_glbs/00230] [iot.dev.glbs    ]:	ports[0]:80
+[ALWAY] [2026-08-31 02:08:26.467] [iot_dev_glbs/00230] [iot.dev.glbs    ]:	ports[1]:1053
+[ALWAY] [2026-08-31 02:08:26.474] [iot_dev_glbs/00226] [iot.dev.glbs    ]:[1]resid:2(PPMQD_UDP), ip:8.209.73.117
+[ALWAY] [2026-08-31 02:08:26.486] [iot_dev_glbs/00230] [iot.dev.glbs    ]:	ports[0]:80
+[ALWAY] [2026-08-31 02:08:26.492] [iot_dev_glbs/00230] [iot.dev.glbs    ]:	ports[1]:1053
+[ALWAY] [2026-08-31 02:08:26.506] [iot_dev_glbs/00226] [iot.dev.glbs    ]:[2]resid:6(APIGW_MOB_PPRPC), ip:8.209.74.201
+[ALWAY] [2026-08-31 02:08:26.510] [iot_dev_glbs/00230] [iot.dev.glbs    ]:	ports[0]:80
+[ALWAY] [2026-08-31 02:08:26.526] [iot_dev_glbs/00230] [iot.dev.glbs    ]:	ports[1]:465
+[ALWAY] [2026-08-31 02:08:26.526] [iot_dev_glbs/00226] [iot.dev.glbs    ]:[3]resid:8(FTCONN_NAT), ip:47.254.174.22
+[ALWAY] [2026-08-31 02:08:26.546] [iot_dev_glbs/00230] [iot.dev.glbs    ]:	ports[0]:1990
+[ALWAY] [2026-08-31 02:08:26.546] [iot_dev_glbs/00230] [iot.dev.glbs    ]:	ports[1]:1991
+[ALWAY] [2026-08-31 02:08:26.551] [iot_dev_glbs/00226] [iot.dev.glbs    ]:[4]resid:8(FTCONN_NAT), ip:47.254.174.22
+[ALWAY] [2026-08-31 02:08:26.566] [iot_dev_glbs/00230] [iot.dev.glbs    ]:	ports[0]:1990
+[ALWAY] [2026-08-31 02:08:26.569] [iot_dev_glbs/00230] [iot.dev.glbs    ]:	ports[1]:1991
+[ALWAY] [2026-08-31 02:08:26.577] [iot_dev_glbs/00226] [iot.dev.glbs    ]:[5]resid:15(FTRECORD), ip:47.254.174.22
+[ALWAY] [2026-08-31 02:08:26.588] [iot_dev_glbs/00230] [iot.dev.glbs    ]:	ports[0]:554
+[ALWAY] [2026-08-31 02:08:26.594] [iot_dev_glbs/00226] [iot.dev.glbs    ]:[6]resid:18(IOTDATA_TCP), ip:8.209.74.201
+[ALWAY] [2026-08-31 02:08:26.608] [iot_dev_glbs/00230] [iot.dev.glbs    ]:	ports[0]:9125
+[ALWAY] [2026-08-31 02:08:26.612] [iot_dev_glbs/00226] [iot.dev.glbs    ]:[7]resid:19(IOTDATA_UDP), ip:8.209.74.201
+[ALWAY] [2026-08-31 02:08:26.628] [iot_dev_glbs/00230] [iot.dev.glbs    ]:	ports[0]:8000
+[INFO ] [2026-08-31 02:08:26.630] [iot_dev_ppmq/00977] [iot.dev.ppmq    ]:============iot_dev_ppmq_start===========
+[ALWAY] [2026-08-31 02:08:26.648] [iot_dev_ppmq/00825] [iot.dev.ppmq    ]:===iot.dev.ppmq try: udp://8.209.73.117:80====
+[INFO ] [2026-08-31 02:08:26.651] [pprpc_create/03371] [pprpc           ]:pprpc(0x2035378) create, ppmq
+[INFO ] [2026-08-31 02:08:26.670] [iot_dev_ppmq/00567] [iot.dev.ppmq    ]:req->req_timems = 1788113306670, ucode=c8:47:8c:6c:2d:77
+[INFO ] [2026-08-31 02:08:26.711] [pprpc_call_c/04808] [pprpc           ]:[pprpc_ppmq](0x2035378) call(PPMQConnect), seq:0, run:40ms, rc:0
+[ALWAY] [2026-08-31 02:08:26.713] [iot_dev_ppmq/00577] [iot.dev.ppmq    ]:Success to PPMQConnect(retry:0)
+[INFO ] [2026-08-31 02:08:26.722] [iot_dev_ppmq/00579] [iot.dev.ppmq    ]:ppmq connect result:
+[INFO ] [2026-08-31 02:08:26.730] [iot_dev_ppmq/00580] [iot.dev.ppmq    ]:	hb_interval:28
+[INFO ] [2026-08-31 02:08:26.738] [iot_dev_ppmq/00581] [iot.dev.ppmq    ]:	sp         :0
+[INFO ] [2026-08-31 02:08:26.746] [iot_dev_ppmq/00582] [iot.dev.ppmq    ]:	code       :0
+[INFO ] [2026-08-31 02:08:26.754] [iot_dev_ppmq/00583] [iot.dev.ppmq    ]:	outside_ip       :91.1.237.15
+[INFO ] [2026-08-31 02:08:26.763] [pint_u64    /00526] [iot.dev.ppmq    ]:req_timems       :1788113306671
+[INFO ] [2026-08-31 02:08:26.772] [pint_u64    /00526] [iot.dev.ppmq    ]:srv_timems       :1788118121950
+[INFO ] [2026-08-31 02:08:26.781] [iot_dev_ppmq/00590] [iot.dev.ppmq    ]:	utc_ms :1788118122005; diff_time :55
+[ALWAY] [2026-08-31 02:08:26.791] [iot_dev_ppmq/00862] [iot.dev.ppmq    ]:sdk init total time = 136234ms
+[I/2026-08-30 19:28:42.005] [ut_xciot.c      /00136] : platform connect utc_ms = 1788118122005, sec=1788118122
+[I/2026-08-30 19:28:42.015] [ut_xciot.c      /00102] : time offset = 0
+[I/2026-08-30 19:28:42.023] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:28:42.027] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:28:42
+[I/2026-08-31 03:28:42.037] [xvideo.c        /00093] : -------->fps=6, vsz=3000, time=1788118122037
+[I/2026-08-31 03:28:42.048] [xvideo.c        /00562] : audio:len=800, sec=1788118122048
+[INFO ] [2026-08-31 03:28:42.063] [pprpc_call_c/04808] [pprpc           ]:[pprpc_ppmq](0x2035378) call(PPMQSubscribe), seq:1, run:42ms, rc:0
+[ALWAY] [2026-08-31 03:28:42.065] [iot_dev_ppmq/00655] [iot.dev.ppmq    ]:Success to PPMQSubscribe(retry:0)
+[ALWAY] [2026-08-31 03:28:42.075] [iot_dev_ppmq/00657] [iot.dev.ppmq    ]:ppmq subscribe result:
+[ALWAY] [2026-08-31 03:28:42.083] [iot_dev_ppmq/00662] [iot.dev.ppmq    ]:	[0]topic:/notify/conn/PPHA1006C0955E8FD9, qos:0
+[ALWAY] [2026-08-31 03:28:42.094] [iot_dev_ppmq/00662] [iot.dev.ppmq    ]:	[1]topic:/xc/2d/cmd/PPHA1006C0955E8FD9, qos:0
+[INFO ] [2026-08-31 03:28:42.105] [iot_dev_nat_/00692] [iot.dev.nat     ]:------------iot_dev_nat_update, but AVSDK_CONN_ONLY_TCP > 0--------------
+[INFO ] [2026-08-31 03:28:42.118] [report_versi/05556] [iot             ]:----------report_version_information----------------
+[INFO ] [2026-08-31 03:28:42.129] [report_versi/05581] [iot             ]:rom ver=3.00.21.01_250918
+[INFO ] [2026-08-31 03:28:42.137] [report_versi/05584] [iot             ]:hdw ver=INNO-IPC-48N-V2.2
+[INFO ] [2026-08-31 03:28:42.146] [avsdk_send_i/06065] [iot             ]:----------avsdk_send_iotcmd,cid=61
+[INFO ] [2026-08-31 03:28:42.157] [iot_dev_ppmq/01170] [iot.dev.ppmq    ]:req->msg_id=D-PPHA1006C0955E8FD9,T-1411727020
+[INFO ] [2026-08-31 03:28:42.195] [pprpc_call_c/04808] [pprpc           ]:[pprpc_ppmq](0x2035378) call(PPMQPublish), seq:2, run:29ms, rc:0
+[INFO ] [2026-08-31 03:28:42.196] [iot_dev_ppmq/01181] [iot.dev.ppmq    ]:ppmq, msg_id=D-PPHA1006C0955E8FD9,T-1411727020,g_msgid=f42186a8708c0d26e3b19358f9dd1c3a
+[INFO ] [2026-08-31 03:28:42.210] [avsdk_send_i/06089] [iot             ]:----------avsdk_send_iotcmd,cid=61, rc=0
+[I/2026-08-30 19:28:42.220] [ut_xciot.c      /00149] : ------------platform connected is ok--------------------
+--write status reg:0,2--
+--write status reg:4004,2--
+--write status reg:0,2--
+--write status reg:4004,2--
+[INFO ] [2026-08-31 03:28:42.237] [avsdk_dp_rep/01351] [iot.dev.dp      ]:avsdk_dp_report_all
+[INFO ] [2026-08-31 03:28:42.445] [avsdk_dp_que/01357] [iot.dev.dp      ]:avsdk_dp_query(dpid:59)
+[INFO ] [2026-08-31 03:28:42.446] [iot_dev_ppmq/01170] [iot.dev.ppmq    ]:req->msg_id=D-PPHA1006C0955E8FD9,T-1411727310
+[INFO ] [2026-08-31 03:28:42.478] [pprpc_call_c/04808] [pprpc           ]:[pprpc_ppmq](0x2035378) call(PPMQPublish), seq:3, run:25ms, rc:0
+[INFO ] [2026-08-31 03:28:42.479] [iot_dev_ppmq/01181] [iot.dev.ppmq    ]:ppmq, msg_id=D-PPHA1006C0955E8FD9,T-1411727310,g_msgid=94908c93766315f5777a67f948932fe8
+[INFO ] [2026-08-31 03:28:42.514] [pprpc_call_c/04808] [pprpc           ]:[pprpc_ppmq](0x2035378) call(PPMQPing), seq:4, run:20ms, rc:0
+[INFO ] [2026-08-31 03:28:42.516] [pprpc_ping_s/00711] [iot.dev.ppmq    ]:ppmq->err_mark=0x0000(0)
+[ALWAY] [2026-08-31 03:28:42.524] [iot_dev_ppmq/01344] [iot.dev.ppmq    ]:Success to PPMQ Ping(normal), hb_count(udp) = 1
+[I/2026-08-30 19:28:42.631] [xdev_adc.c      /00088] : ---vbat voltage:4154---
+
+[I/2026-08-30 19:28:43.141] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:28:43.141] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:28:43
+jpeg fps:[20] bitrate:[220 KB] 
+[I/2026-08-30 19:28:43.715] [xdev_adc.c      /00088] : ---vbat voltage:4218---
+
+[I/2026-08-31 03:28:44.049] [xvideo.c        /00093] : -------->fps=9, vsz=3000, time=1788118124049
+         pool size  max used size available size
+------- ---------- ------------- --------------
+ITCM    27072      16756         10316
+TCM     116024     60612         59716
+heap    262144     215148        61776
+[I/2026-08-30 19:28:44.185] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:28:44.185] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:28:44
+[I/2026-08-30 19:28:44.812] [xdev_adc.c      /00088] : ---vbat voltage:4190---
+
+[I/2026-08-30 19:28:45.212] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:28:45.212] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:28:45
+jpeg fps:[20] bitrate:[220 KB] 
+[I/2026-08-30 19:28:45.910] [xdev_adc.c      /00088] : ---vbat voltage:4151---
+
+[I/2026-08-31 03:28:46.143] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788118126143
+[I/2026-08-30 19:28:46.250] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:28:46.250] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:28:46
+[I/2026-08-30 19:28:46.993] [xdev_adc.c      /00088] : ---vbat voltage:4170---
+
+[I/2026-08-31 03:28:47.201] [xvideo.c        /00562] : audio:len=800, sec=1788118127201
+[I/2026-08-30 19:28:47.286] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:28:47.286] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:28:47
+jpeg fps:[20] bitrate:[220 KB] 
+[I/2026-08-30 19:28:48.074] [xdev_adc.c      /00088] : ---vbat voltage:4198---
+
+[I/2026-08-31 03:28:48.249] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788118128249
+[I/2026-08-30 19:28:48.329] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:28:48.329] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:28:48
+[I/2026-08-30 19:28:49.158] [xdev_adc.c      /00088] : ---vbat voltage:4173---
+
+jpeg fps:[20] bitrate:[220 KB] 
+[I/2026-08-30 19:28:49.381] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:28:49.381] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:28:49
+[I/2026-08-31 03:28:50.350] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788118130350
+[I/2026-08-30 19:28:50.351] [xdev_adc.c      /00088] : ---vbat voltage:4161---
+
+[I/2026-08-30 19:28:50.430] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:28:50.430] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:28:50
+[I/2026-08-30 19:28:50.434] [xdev_button.c   /00528] : xdev_historyfps_lasttime_set !!!  curtime:1788118130434
+[INFO ] [2026-08-31 03:28:50.444] [avsdk_push_i/08236] [iot             ]:-------------avsdk_push_info--------------
+[INFO ] [2026-08-31 03:28:50.454] [avsdk_push_i/08260] [iot             ]:netQos=3, battery=70, powerModel=139, timeOffset=0, ttcmdCount=0
+[INFO ] [2026-08-31 03:28:50.466] [avsdk_push_i/08271] [iot             ]:romVer = 3.00.21.01_250918
+[INFO ] [2026-08-31 03:28:50.475] [avsdk_push_i/08274] [iot             ]:hardwareVer = INNO-IPC-48N-V2.2
+[INFO ] [2026-08-31 03:28:50.484] [avsdk_push_i/08276] [iot             ]:IOTSDK Ver = 3.00.42.01_241230
+[INFO ] [2026-08-31 03:28:50.493] [avsdk_push_i/08280] [iot             ]:ICCID = 
+[INFO ] [2026-08-31 03:28:50.500] [avsdk_push_i/08283] [iot             ]:IMEI = 
+[INFO ] [2026-08-31 03:28:50.507] [avsdk_push_i/08286] [iot             ]:IMSI = 
+[INFO ] [2026-08-31 03:28:50.515] [avsdk_send_i/06065] [iot             ]:----------avsdk_send_iotcmd,cid=70
+[INFO ] [2026-08-31 03:28:50.526] [iot_dev_ppmq/01170] [iot.dev.ppmq    ]:req->msg_id=D-PPHA1006C0955E8FD9,T-1411735389
+[INFO ] [2026-08-31 03:28:50.562] [pprpc_call_c/04808] [pprpc           ]:[pprpc_ppmq](0x2035378) call(PPMQPublish), seq:5, run:27ms, rc:0
+[INFO ] [2026-08-31 03:28:50.564] [iot_dev_ppmq/01181] [iot.dev.ppmq    ]:ppmq, msg_id=D-PPHA1006C0955E8FD9,T-1411735389,g_msgid=ccb87cdbf471e4c268797655578b3eb0
+[INFO ] [2026-08-31 03:28:50.578] [avsdk_send_i/06089] [iot             ]:----------avsdk_send_iotcmd,cid=70, rc=0
+[E/2026-08-31 03:28:50.588] [tf_record.c     /00506] : statfs failed for path->[/sd]
+W (146773) sd_card: CMD8 SEND_IF_COND err:-3902
+W (146777) sd_card: CMD55 APP_CMD err:-3902
+[E/2026-08-31 03:28:51.212] [tf_record.c     /00514] : SD File System initialzation failed!
+
+jpeg fps:[20] bitrate:[225 KB] 
+[I/2026-08-30 19:28:51.539] [xdev_adc.c      /00088] : ---vbat voltage:4192---
+
+[I/2026-08-31 03:28:52.246] [xvideo.c        /00562] : audio:len=800, sec=1788118132246
+[I/2026-08-30 19:28:52.255] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:28:52.255] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:28:52
+[I/2026-08-31 03:28:52.445] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788118132445
+[I/2026-08-30 19:28:52.622] [xdev_adc.c      /00088] : ---vbat voltage:4192---
+
+[I/2026-08-30 19:28:53.295] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:28:53.295] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:28:53
+jpeg fps:[21] bitrate:[231 KB] 
+[I/2026-08-30 19:28:53.703] [xdev_adc.c      /00088] : ---vbat voltage:4169---
+
+[I/2026-08-30 19:28:54.336] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:28:54.336] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:28:54
+[I/2026-08-31 03:28:54.553] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788118134553
+         pool size  max used size available size
+------- ---------- ------------- --------------
+ITCM    27072      16756         10316
+TCM     116024     60612         59716
+heap    262144     215148        61800
+[I/2026-08-30 19:28:54.804] [xdev_adc.c      /00088] : ---vbat voltage:4193---
+
+[I/2026-08-30 19:28:55.373] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:28:55.373] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:28:55
+jpeg fps:[21] bitrate:[231 KB] 
+[I/2026-08-30 19:28:55.902] [xdev_adc.c      /00088] : ---vbat voltage:4200---
+
+[I/2026-08-30 19:28:56.424] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:28:56.424] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:28:56
+[I/2026-08-31 03:28:56.649] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788118136649
+[I/2026-08-30 19:28:56.985] [xdev_adc.c      /00088] : ---vbat voltage:4154---
+
+[I/2026-08-31 03:28:57.369] [xvideo.c        /00562] : audio:len=800, sec=1788118137369
+[I/2026-08-30 19:28:57.469] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:28:57.469] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:28:57
+jpeg fps:[21] bitrate:[231 KB] 
+[I/2026-08-30 19:28:58.067] [xdev_adc.c      /00088] : ---vbat voltage:4188---
+
+[I/2026-08-30 19:28:58.512] [xdev_button.c   /00588] : UTC_Second : 0
+[I/2026-08-30 19:28:58.512] [xdev_button.c   /00589] : usb level is 1
+
+date: 2026-8-30, time: 27:28:58
+[I/2026-08-31 03:28:58.746] [xvideo.c        /00093] : -------->fps=10, vsz=3000, time=1788118138746
