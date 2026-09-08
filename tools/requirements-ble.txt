@@ -1,0 +1,3 @@
+# For tools/ble_provision.py
+bleak>=0.20          # cross-platform BLE (Windows/Linux/macOS)
+cryptography>=3.0    # AES-256-CBC (pycryptodome also works if present)
