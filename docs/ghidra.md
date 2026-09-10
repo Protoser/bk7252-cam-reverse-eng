@@ -315,3 +315,38 @@ sit in a packed, no-per-entry-pointer name table like `avsdk_write_video_slice`
 originally did, so the direct byte-pattern-search trick didn't immediately
 work; whether `pprpc_call_and_wait`'s payload gets encrypted by a lower layer
 (KCP or inside `FUN_00149670`) is also unconfirmed.
+
+## Session 5 (2026-09-10): the microphone / audio path
+
+Answering "is there anything about a mic": yes, a complete one. Full write-up in
+`audio-mic.md`; what was labelled in the project this session:
+
+| Address    | Name | Notes |
+|------------|------|-------|
+| 0x0001fa2c | `av_audio_subscriber_add` | renamed function + plate comment |
+| 0x0001f958 | `av_audio_subscriber_del` | renamed function |
+| 0x00082f48 | `dev_on_ipc_AudioPlay` | label + plate comment (region is DATA, see below) |
+| 0x00083064 | `dev_on_ipc_AudioPause` | label + plate comment (region is DATA) |
+| 0x00085b34 | `audio_enc_thread_entry` | label + plate comment |
+
+**Trap worth knowing:** the `ut_dev_ipc_cmd.c` handler block around
+0x82f48-0x83100 is classified as **defined data**, not code. `create_function`
+refuses there ("Function entryPoint may not be created on defined data") and
+`decompile_function` has nothing to work with. Two consequences:
+
+- Some handler banner strings have **no xrefs** even though they are referenced
+  (`ipc_AudioPlay_Req` @0x1650b2 shows none, while `ipc_AudioPause_Req` @0x1651b1
+  shows one). Absence of an xref is not evidence of absence of a handler.
+- Read these with `disassemble_bytes` + `dry_run: true` and decode the literal
+  pool by hand with `read_memory`. Starting mid-instruction gives convincing
+  garbage, so anchor on a Thumb prologue (`f0b5`, `f7b5`) before trusting output.
+
+**Deriving any CmdID -> name mapping** (generalises the WifiSet work):
+`pprpc_cmd_id_to_name` @0x68e94 compiles to a binary search over two parallel-ish
+arrays - ID constants at **0x69360** (`id[m]` at `0x69360 + 4m`) and name pointers
+at **0x69494** (`name[n]` at `0x69494 + 4n`, strings from 0x15a6c8). Read both
+with `read_memory` and match the `DAT_` addresses in the decompiled comparisons.
+Cross-check against the nanopb descriptor table @**0x159608** (entry N at
+`0x159608 + N*0x20`, first word = CmdID), whose entry index equals the name
+index. Doing this found that the old `FlipGet @0x0A36` row in
+`protocol-commands.md` was wrong - 0x0A36 is `AudioPlay`.

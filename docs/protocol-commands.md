@@ -24,7 +24,10 @@ firmware_combined.bin (Ghidra, base 0x10000). Source of truth:
 | 0x0A33  | 2611 | VideoPause        | stop AV stream |
 | 0x0A34  | 2612 | VideoQosSet       | set stream bitrate/qos |
 | 0x0A35  | 2613 | FlipSet           | set image flip/mirror |
-| 0x0A36  | 2614 | FlipGet           | read flip state |
+| 0x0A36  | 2614 | AudioPlay         | subscribe to mic audio (8k/16bit/mono PCM) |
+| 0x0A37  | 2615 | AudioPause        | unsubscribe from mic audio |
+| 0x0A38  | 2616 | TalkbackPlay      | enumerated only, **no handler** in this build |
+| 0x0A39  | 2617 | TalkbackPause     | enumerated only, **no handler** in this build |
 | 0x0A57  | 2647 | Reboot            | reboot the device (channel arg) |
 | 0x0A58  | 2648 | Reset             | factory reset (channel arg) |
 | 0x0A5A  | 2650 | LanAuth           | session auth (already used) |
@@ -32,7 +35,7 @@ firmware_combined.bin (Ghidra, base 0x10000). Source of truth:
 | 0x0A5F  | 2655 | StorageFormatRate | poll format progress |
 
 Other named commands present in the enum (IDs derivable the same way, not all
-traced): RecordStart, RecordStop, EventFile, AudioPlay/AudioPause, PtzCtrl
+traced): RecordStart, RecordStop, EventFile, PtzCtrl
 (~0x0A68), Screenshot, TimeSet, ConfigGet, MotionzoneSet, PirSet/PirGet,
 LedModeSet/Get, PowerFreqSet/Get, AlarmGet, HistoryDayList/Play/Pause,
 DirCreate/List/Del/Edit, StorageInfo, GetNetworkInfo, SetAutoTrack/GetAutoTrack,
@@ -40,6 +43,10 @@ VideoChanChange, LogSet, FileStart/FileStop, TimedcruiseSet/Get, FirmwareCheck/
 FirmwareChanCheck/FirmwareNotify/FirmwareRate (OTA), IotAlertList/SetRead,
 FTRECORD push. VideoCall(561) and PauseAllAv(563) exist in the enum but the
 device replies "Device unsupport ...!!!" — not implemented on this model.
+
+There is **no `FlipGet`** in this enum - an earlier revision of this table
+listed one at 0x0A36; that slot is `AudioPlay`. See `audio-mic.md` for the
+mic capture path and the full derivation.
 
 ## WifiSet (0x0A2A) — live wifi reconfiguration over the LAN — WORKING
 
