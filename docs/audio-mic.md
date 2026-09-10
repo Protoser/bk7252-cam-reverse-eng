@@ -116,7 +116,71 @@ implemented command, which logs one. The explicit refusals
 The DAC hardware is present regardless, so two-way audio is a firmware gap, not a
 hardware one.
 
-## 6. How to try it
+## 6. Is it encrypted? No - audio ships in the clear
+
+**The audio slices are sent with EncType = 0.** Verified at instruction level,
+because the decompiler is actively misleading here (see the caveat below).
+
+Both media types end up in the same wire-send, `pprpc_build_and_send_slice_msg`
+@0x5c168, which takes the per-packet **EncType** in the stack slot at `[sp,#0x8]`
+(0 = none, 3 = AES-256-CBC). The two callers fill that slot differently:
+
+- **Video** - `avsdk_video_conn_send_slice` @0x1d868:
+  ```
+  0001d8fc  mov  r3,#0x0
+  0001d900  strb r3,[r11,#-0x11]     ; enctype = 0
+  0001d904  ldrb r3,[r11,#0x24]
+  0001d908  cmp  r3,#0x1
+  0001d90c  bhi  0x1d918             ; if that byte > 1, leave it at 0
+  0001d910  mov  r3,#0x3
+  0001d914  strb r3,[r11,#-0x11]     ; else enctype = 3 (AES-256-CBC)
+  ...
+  0001d9c4  ldrb r3,[r11,#-0x11]
+  0001d9c8  str  r3,[sp,#0x8]        ; <- EncType arg
+  ```
+  i.e. conditional, which is why only the I-frame header slice comes out
+  encrypted (see `av.py`'s header notes).
+
+- **Audio** - `FUN_00044e24` (reached from `xsend_audio` @0xc8e38 ->
+  `FUN_000c8a3c` -> `thunk_FUN_00025ed4`):
+  ```
+  00044eec  mov  r3,#0x0
+  00044ef4  str  r3,[sp,#0x8]        ; <- EncType arg, hardcoded 0
+  ```
+  Unconditional, and identical in **both** branches of the function
+  (@0x44eec and @0x44fcc). There is no path that sets it to 3.
+
+So an audio slice is a plain pprpc type-6 packet whose payload is the raw PCM.
+No key needed: capture the AV socket, keep the audio slices, write the bytes out,
+play them. The LanAuth session token is only required for the *video* I-frame
+header.
+
+**Decompiler caveat:** Ghidra renders the audio call as
+`pprpc_build_and_send_slice_msg(..., 0)` with 7 arguments, because it inherits the
+7-parameter prototype guessed for that function. The real call passes ~20 args and
+spills most of them to the stack, so argument positions in the pseudocode do not
+line up with reality. Do not read the EncType off the decompiled call - diff the
+two `bl 0x5c168` call frames in the disassembly instead.
+Don't be misled by `mov r3,#0x3 ; str r3,[sp,#0x20]` in the audio path either:
+that is a *different* parameter (video passes a caller byte from `[r11,#0x14]`
+into the same slot), not the encryption type.
+
+### The layers around it, for completeness
+
+| Layer | Encrypted? |
+|-------|-----------|
+| TCP transport (20190) | **No.** No TLS. `av.py` parses pprpc frames straight off the raw socket bytes. |
+| Control channel (type 4: LanAuth, AudioPlay, ...) | AES-256-CBC, key `md5hex(prekey + ",ID:%d-SEQ:%d-RPC:%d")`. The pre-auth prekey is the hardcoded `A2r0i1m1a2M0a1x6toriQue`, recoverable from any firmware image. |
+| Video (type 6) | Only the I-frame header slice, first `EncLen` (~1040) bytes, key `md5hex(token + ",AVSeq:%d-TT:%d-AVChannel:%d")` where token is the per-session LanAuth secret. |
+| **Audio (type 6)** | **Never. EncType is hardcoded 0.** |
+
+The one thing that does gate audio is *authorisation*, not encryption: you still
+need a valid LanAuth session before `AudioPlay` will put your connection in the
+subscriber table. But once frames flow, the audio bytes themselves are plaintext
+to anyone who can see the traffic - and per the boot-time `GetServers` leak, a
+passive observer who catches a reboot gets the device secret anyway.
+
+## 7. How to try it
 
 `AudioPlay` takes the same one-field request as `VideoPause` and needs the same
 session state as video: LanAuth, then `SyncConn`, then `AudioPlay(0x0A36)` on the
